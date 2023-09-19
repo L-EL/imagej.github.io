@@ -94,6 +94,8 @@ From a segmented image of an Arabidospsi thaliana embryo of 122 cells (FigA), a 
 
 ![](/media/plugins/filiationtools.png)
 
+Find some segmentation file on the github (https://github.com/L-EL/TreeJ/) to test by yourself.
+
 ## Installation
 
 Download [.jar](https://github.com/L-EL/TreeJ/raw/master/TreeJ_-1.0.0-SNAPSHOT.jar) and put into "plugin" directory of ImageJ or Fiji directory. Reload ImageJ/Fiji and TreeJ will be accessible in the {% include bc path='Plugin | TreeJ'%} menu.
