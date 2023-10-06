@@ -2,7 +2,7 @@
 mediawiki: TreeJ
 name: "TreeJ"
 title: TreeJ
-categories: [Analysis]
+categories: [Annotation, Analysis]
 initial-release-date: "July, 2016"
 team-founders:
 - Elise Laruelle | https://github.com/L-EL
@@ -27,12 +27,17 @@ This plugin contains an interface to reconstruct interactively and recursively a
 
 <img src="/media/plugins/treejexample.png" width="900"/> 
 
+## Installation & updates
+
+You can Download [.jar](https://github.com/L-EL/TreeJ/raw/master/TreeJ_-1.0.0-SNAPSHOT.jar) and add it into the "plugin" directory of your ImageJ or Fiji directory (or use the Plugins>install menu on imageJ/Fiji that asks you to provide the jar file). Reload ImageJ/Fiji and TreeJ will be accessible in the {% include bc path='Plugins | TreeJ'%} menu.
+
+Or, with ImageJ2 or Fiji, you can add TreeJ into the updates with the ImageJ Updater. in {% include bc path='Help | updates...'%} select "Manage Update Sites", then tick the TreeJ box, close this dialog box, select "Apply and Close" and Reload ImageJ/Fiji.
 
 ## Usage
 
 #### Input
 
-TreeJ should be launched on a 2D or 3D labeled image (8 bits, 16 bits or 32 bits). The labeling can be discontinuous and watershed lines, if present, are not a problem. The region labels with zero are considered as the background.
+TreeJ should be launched on a 2D or 3D labeled image (8 bits, 16 bits or 32 bits). The labeling can be discontinuous and watershed lines, if present, are not a problem. The region labels with zero are considered as the background. In case of a lake of depth, an image conversion is realized that will impact only the output image (ex: having already a 255 label in an 8-bits image will convert to a 16-bits image).
 
 ------------------------------------------------------------------------
 
@@ -94,8 +99,6 @@ From a segmented image of an Arabidospsi thaliana embryo of 122 cells (FigA), a 
 
 ![](/media/plugins/filiationtools.png)
 
-## Installation
-
-Download [.jar](https://github.com/L-EL/TreeJ/raw/master/TreeJ_-1.0.0-SNAPSHOT.jar) and put into "plugin" directory of ImageJ or Fiji directory. Reload ImageJ/Fiji and TreeJ will be accessible in the {% include bc path='Plugin | TreeJ'%} menu.
-
+## other documentations 
+take a look at the related publication
  
